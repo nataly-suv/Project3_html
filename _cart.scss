@@ -1,0 +1,236 @@
+// input[type=number] {
+//     border: 1px dotted #999;
+//     border-radius: 0;
+
+//     -webkit-appearance: none;
+//   }
+
+input[type="number"] {
+    background-color: #eee;
+    // vertical-align: top;
+    outline: none;
+    height: 24px;
+    line-height: 20px;
+    text-indent: 10px;
+    display: inline-block;
+    width: 44px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.breadcrump {
+    background-color: rgba(248, 243, 244, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        color: $colorSelectSite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__title:hover {
+        color: #f51c39;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    padding-top: 96px;
+
+    &__buttonsPosition {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__button {
+        border: 1px solid rgba(164, 164, 164, 1);
+        background-color: transparent;
+    }
+
+    &__button:hover {
+        background-color: $colorSelectSite;
+        color: white;
+    }
+
+}
+
+.content__left {
+    // padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+
+    &_buttonText {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding: 17px 40px;
+    }
+}
+
+.cart-item {
+    width: 652px;
+    display: flex;
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+
+
+    &__description {
+        padding-top: 22px;
+        padding-left: 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__title:hover {
+        color: $colorSelectSite
+    }
+
+    &__text {
+        padding-top: 42px;
+        color: #575757;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+}
+
+.content__right {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+}
+
+.adress {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    &__form {
+        width: 360px;
+        height: 44px;
+        border: 1px solid rgba(164, 164, 164, 1);
+
+        &::placeholder {
+            color: grey;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            padding-left: 18px;
+        }
+    }
+
+    &__text {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__buttonText {
+        padding: 12px 15px;
+        color: grey;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+.summa {
+    width: 360px;
+    min-height: 100px;
+    background-color: rgba(245, 243, 243, 1);
+    padding-bottom: 42px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    &__total {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        padding-right: 34px;
+    }
+
+    &__subTotal {
+        color: grey;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+    }
+
+    &__grandTotal {
+        color: grey;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: right;
+
+        &_price {
+            color: $colorSelectSite;
+            font-weight: 400;
+        }
+    }
+
+    &__line {
+        color: grey;
+        width: 270px;
+        margin-left: 42px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__buttonPosition {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__button {
+        background-color: $colorSelectSite;
+        border: transparent;
+        color: white;
+        padding: 16px 43px;
+        width: 270px;
+    }
+    &__button:hover {
+        background-color: #f51c39;
+    }
+
+}
