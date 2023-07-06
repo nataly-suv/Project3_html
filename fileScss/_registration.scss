@@ -1,0 +1,184 @@
+.breadcrumpRegistration {
+    background-color: rgba(248, 243, 244, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        color: $colorSelectSite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__title:hover {
+        color: #f51c39;
+    }
+}
+
+.contentRegistration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+// formRegistration
+.formRegistration {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 21px;
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &_title {
+            color: #222;
+            font-size: 16px;
+        }
+
+        &_genget {
+            color: #B1B1B1;
+            font-size: 11px;
+        }
+
+        &_text {
+            color: #B1B1B1;
+            font-size: 13px;
+            width: 360px;
+            text-align: justify;
+        }
+
+
+    }
+
+    &__form {
+        width: 360px;
+        border: 1px solid rgba(164, 164, 164, 1);
+        padding: 13px 0 16px 18px;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #B1B1B1;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+        }
+
+        // &:focus {
+        //     border-color: $colorSelectSite;
+        // }
+
+        // &:placeholder-shown {
+        //     border-color: $colorSelectSite;
+        // }   
+    }
+
+    &__gender {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &_part {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 7px;
+
+            // input[type=checkbox] {
+            //     display: none;
+            // }
+
+            // lable:before {
+            //     border: 1px solid #B1B1B1;
+            //     border-radius: 10px;
+            // }
+
+            // input[type=checkbox]:before {
+            //     border: 1px solid #B1B1B1;
+            //     border-radius: 10px;
+            // }
+        }
+    }
+
+    &__button {
+        width: 167px;
+        background-color: $colorSelectSite;
+        border-color: transparent;
+        box-sizing: border-box;
+        padding: 17px 29px;
+
+        color: white;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &_pudding {
+            padding-right: 10px;
+        }
+
+        &:hover {
+            background-color: #f1223e;
+        }
+    }
+}
+
+// formRegistration end
+
+
+// loyaltyRegistrationt
+.loyaltyRegistrationt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 22px;
+
+
+    &__text {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        max-width: 652px;
+        text-align: justify;
+    }
+
+    &__list {
+        list-style-image: url(img/galochka.svg);
+        // list-style-position: inside;
+        padding-left: 30px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__padding {
+        padding-left: 23px;
+    }
+
+
+
+
+
+}
+
+// loyaltyRegistrationt end
