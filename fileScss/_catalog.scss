@@ -178,5 +178,60 @@ summary::-webkit-details-marker {
         color: #C4C4C4;
     }
 
+}
 
+
+@media (max-width: 1024px) {
+    .center {
+        padding-right: calc(50% - 368px);
+        padding-left: calc(50% - 368px);
+    }
+
+    .fetured__item_none {
+        display: none;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .center {
+        padding-right: calc(50% - 178px);
+        padding-left: calc(50% - 178px);
+    }
+
+    .nav__product {
+        padding-top: 24px;
+        padding-bottom: 46px;
+
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filters {
+
+        &__left {
+            width: 40px;
+
+            &-head {
+                display: none;
+            }
+
+            &-summary svg {
+                width: 38px;
+                height: 25px;
+            }
+        }
+
+        &__right {
+            left: 95px;
+            gap: 23px;
+
+            &-head {
+                font-size: 12px;
+                gap: 8px;
+            }
+        }
+    }
 }

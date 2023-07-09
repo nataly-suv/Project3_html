@@ -137,10 +137,9 @@
             background-color: #f1223e;
         }
     }
+
+    // formRegistration end
 }
-
-// formRegistration end
-
 
 // loyaltyRegistrationt
 .loyaltyRegistrationt {
@@ -148,7 +147,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 22px;
-
 
     &__text {
         color: #000;
@@ -175,10 +173,50 @@
         padding-left: 23px;
     }
 
-
-
-
-
+    // loyaltyRegistrationt end
 }
 
-// loyaltyRegistrationt end
+
+
+@media (max-width: 1024px) {
+    .center {
+        padding-right: calc(50% - 368px);
+        padding-left: calc(50% - 368px);
+    }
+
+    .contentRegistration {
+        gap: 22px;
+    }
+
+    .loyaltyRegistrationt {
+        max-width: 354px;
+
+        &__text {
+            font-size: 16px;
+            max-width: 354px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .center {
+        padding-right: calc(50% - 178px);
+        padding-left: calc(50% - 178px);
+    }
+
+    .contentRegistration {
+        gap: 40px;
+    }
+
+    .formRegistration {
+        justify-content: center;
+
+        &__form {
+            max-width: 357px;
+        }
+    }
+
+    .loyaltyRegistrationt {
+        gap: 32px;
+    }
+}
